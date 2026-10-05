@@ -1,0 +1,14 @@
+Model,Category,Scaled,Features,CV R2 Mean,CV R2 Std,CV RMSE,CV MAE,Test R2,Test RMSE,Test MAE,CV Train Time (s)
+"Linear Regression (Unscaled, 20 Feat)",Scaling Experiment,False,20 (Original),0.84421,0.00224,0.0201,0.01583,0.84958,0.01991,0.0157,1.85
+"Linear Regression (Scaled, 20 Feat)",Baseline,True,20 (Original),0.84421,0.00224,0.0201,0.01583,0.84958,0.01991,0.0157,1.27
+"Ridge Regression (Scaled, default alpha=1.0)",Regularization,True,20 (Original),0.84421,0.00224,0.0201,0.01583,0.84958,0.01991,0.0157,1.16
+"Ridge Regression (Unscaled, default alpha=1.0)",Scaling Experiment,False,20 (Original),0.84421,0.00224,0.0201,0.01583,0.84958,0.01991,0.0157,0.21
+"HistGradientBoosting (Default, 20 Feat)",Ensemble Non-Linear,False,20 (Original),0.75598,0.00162,0.02515,0.02048,0.76422,0.02493,0.02039,1.29
+"HistGradientBoosting (150 iters, lr=0.08)",Ensemble Non-Linear,False,20 (Original),0.78277,0.00174,0.02373,0.01926,0.78979,0.02354,0.01913,1.75
+"Random Forest (50 Trees, max_depth=10)",Ensemble Non-Linear,False,20 (Original),0.43933,0.00174,0.03812,0.03107,0.43646,0.03854,0.0315,6.66
+"MLP Neural Net (Scaled, 32-16 layers)",Neural Network,True,20 (Original),0.84457,0.0025,0.02007,0.01575,0.85215,0.01974,0.01554,3.16
+"Linear Regression (Scaled, 20 + 3 Aggregates)",Feature Engineering,True,23 (Engineered),0.84421,0.00224,0.0201,0.01583,0.84958,0.01991,0.0157,0.35
+HistGradientBoosting (20 + 3 Aggregates),Feature Engineering,False,23 (Engineered),0.86503,0.00191,0.0187,0.01461,0.87092,0.01845,0.01441,0.88
+"Ridge Regression (Scaled, 20 + 3 Aggregates)",Feature Engineering,True,23 (Engineered),0.84421,0.00224,0.0201,0.01583,0.84958,0.01991,0.0157,0.32
+Tuned Ridge (alpha=0.207),Hyperparameter Tuning,True,20 (Original),0.84421,0.00224,0.0201,0.01583,0.84958,0.01991,0.0157,1.78
+Tuned HistGradientBoosting,Hyperparameter Tuning,False,20 (Original),0.7976,0.00257,0.02291,0.01835,0.80573,0.02263,0.01809,8.54

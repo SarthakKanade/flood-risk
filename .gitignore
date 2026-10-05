@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local cache directories
+.cache/
+.DS_Store
+
+# Large raw datasets (>50MB) - keeping processed sample_100k.csv and flood.csv
+data/raw/train.csv
+data/raw/test.csv
+data/raw/sample_submission.csv

@@ -1,0 +1,174 @@
+{
+    "model_name": "HistGradientBoostingRegressor (with internal Feature Engineering)",
+    "test_regression": {
+        "r2": 0.8709178084238269,
+        "rmse": 0.018446192955509085,
+        "mae": 0.014406697393653963
+    },
+    "risk_tier_classification": {
+        "macro_f1": 0.7329859132865333,
+        "confusion_matrix": [
+            [
+                5113,
+                1761,
+                2
+            ],
+            [
+                1676,
+                3636,
+                1173
+            ],
+            [
+                0,
+                630,
+                6009
+            ]
+        ],
+        "tier_labels": [
+            "Low",
+            "Medium",
+            "High"
+        ],
+        "class_metrics": {
+            "Low": {
+                "precision": 0.75313,
+                "recall": 0.7436,
+                "f1_score": 0.74834,
+                "support": 6876
+            },
+            "Medium": {
+                "precision": 0.60329,
+                "recall": 0.56068,
+                "f1_score": 0.5812,
+                "support": 6485
+            },
+            "High": {
+                "precision": 0.83644,
+                "recall": 0.90511,
+                "f1_score": 0.86942,
+                "support": 6639
+            }
+        }
+    },
+    "error_analysis": {
+        "max_absolute_error": 0.18103857226479042,
+        "mean_absolute_error": 0.014406697393653963,
+        "mae_near_tier_boundaries": 0.012223935208954368,
+        "mae_middle_regions": 0.01601676861254503,
+        "mae_extreme_values": 0.010445550467681794,
+        "top10_errors_indices": [
+            11714,
+            48618,
+            99911,
+            96284,
+            49960,
+            74620,
+            28827,
+            42887,
+            68377,
+            83171
+        ]
+    },
+    "permutation_importance": [
+        {
+            "Feature": "PoliticalFactors",
+            "Importance_Mean": 0.14616790003223978,
+            "Importance_Std": 0.0016879524951869014
+        },
+        {
+            "Feature": "Watersheds",
+            "Importance_Mean": 0.1411189660798199,
+            "Importance_Std": 0.0011981455170661114
+        },
+        {
+            "Feature": "RiverManagement",
+            "Importance_Mean": 0.13955558723816125,
+            "Importance_Std": 0.0012226846056588264
+        },
+        {
+            "Feature": "DamsQuality",
+            "Importance_Mean": 0.13938680659845276,
+            "Importance_Std": 0.0016369480269270837
+        },
+        {
+            "Feature": "Urbanization",
+            "Importance_Mean": 0.13928667156359067,
+            "Importance_Std": 0.0006852846380214115
+        },
+        {
+            "Feature": "Landslides",
+            "Importance_Mean": 0.13907957857938075,
+            "Importance_Std": 0.001954983560786929
+        },
+        {
+            "Feature": "CoastalVulnerability",
+            "Importance_Mean": 0.1389433712188646,
+            "Importance_Std": 0.0010301244215948576
+        },
+        {
+            "Feature": "TopographyDrainage",
+            "Importance_Mean": 0.13846316863440503,
+            "Importance_Std": 0.0011851753467225252
+        },
+        {
+            "Feature": "DrainageSystems",
+            "Importance_Mean": 0.13833273452255065,
+            "Importance_Std": 0.001586953088969391
+        },
+        {
+            "Feature": "AgriculturalPractices",
+            "Importance_Mean": 0.1377287377813569,
+            "Importance_Std": 0.0011183298778484044
+        },
+        {
+            "Feature": "IneffectiveDisasterPreparedness",
+            "Importance_Mean": 0.13763206590837274,
+            "Importance_Std": 0.0020736920806083813
+        },
+        {
+            "Feature": "Encroachments",
+            "Importance_Mean": 0.13756074909287042,
+            "Importance_Std": 0.0011283299097785563
+        },
+        {
+            "Feature": "Siltation",
+            "Importance_Mean": 0.1374198679356262,
+            "Importance_Std": 0.0007672510684580418
+        },
+        {
+            "Feature": "InadequatePlanning",
+            "Importance_Mean": 0.13740019133053905,
+            "Importance_Std": 0.0016617857967398176
+        },
+        {
+            "Feature": "WetlandLoss",
+            "Importance_Mean": 0.13651672366191955,
+            "Importance_Std": 0.0010344130436342515
+        },
+        {
+            "Feature": "PopulationScore",
+            "Importance_Mean": 0.13631564505456337,
+            "Importance_Std": 0.0015269939000501819
+        },
+        {
+            "Feature": "ClimateChange",
+            "Importance_Mean": 0.1356747760865274,
+            "Importance_Std": 0.0017506732766923172
+        },
+        {
+            "Feature": "Deforestation",
+            "Importance_Mean": 0.1343726211206421,
+            "Importance_Std": 0.002684547315066552
+        },
+        {
+            "Feature": "DeterioratingInfrastructure",
+            "Importance_Mean": 0.13406522990323694,
+            "Importance_Std": 0.0010721274697673062
+        },
+        {
+            "Feature": "MonsoonIntensity",
+            "Importance_Mean": 0.13146161048728727,
+            "Importance_Std": 0.0004332753271223102
+        }
+    ]
+}

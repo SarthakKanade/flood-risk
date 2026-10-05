@@ -1,0 +1,10 @@
+{
+    "q33": 0.48,
+    "q67": 0.525,
+    "labels": [
+        "Low",
+        "Medium",
+        "High"
+    ],
+    "description": "Quantile-based regional risk tiers calculated on training split."
+}
